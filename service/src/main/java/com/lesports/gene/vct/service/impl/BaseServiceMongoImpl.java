@@ -27,7 +27,7 @@ import com.mongodb.WriteResult;
  * @param <ID> id类型
  * @param <Bean>
  */
-public class BaseServiceImpl<ID, Bean> implements BaseService<ID, Bean> {
+public class BaseServiceMongoImpl<ID, Bean> implements BaseService<ID, Bean> {
 	protected Logger logger = LoggerFactory.getLogger(getClass());
 	@Autowired
 	protected MongoTemplate mongoTemplate;
@@ -35,7 +35,7 @@ public class BaseServiceImpl<ID, Bean> implements BaseService<ID, Bean> {
 	@SuppressWarnings("unused")
 	private Class<ID> key;
 	@SuppressWarnings("unchecked")
-	public BaseServiceImpl() {
+	public BaseServiceMongoImpl() {
 		Type[] types = ((ParameterizedType) getClass().getGenericSuperclass()).getActualTypeArguments();
 		key = (Class<ID>)types[0];
 		entityClass = (Class<Bean>)types[1];

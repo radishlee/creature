@@ -1,10 +1,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" 
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-    <parent>  
-        <artifactId>gene_vct_parent</artifactId>  
-        <groupId>com.lesports.gene.vct</groupId>  
-        <version>1.0</version>  
+    <parent>
+        <groupId>com.lunchtech.vlbs</groupId>
+        <artifactId>vlbs_lunchtech_parent</artifactId>
+        <version>1.0</version>
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
@@ -36,7 +36,7 @@
 
     <dependencies>
     	<dependency>
-    		<groupId>com.lesports.gene.vct</groupId>
+    		<groupId>com.lunchtech.vlbs</groupId>
     		<artifactId>common</artifactId>
     		<version>1.0</version>
     	</dependency>

@@ -4,7 +4,6 @@ import com.google.common.base.Strings;
 import com.lesports.gene.vct.common.enumuration.FileTypeEnum;
 import com.lesports.gene.vct.common.exception.ServiceException;
 import com.lesports.gene.vct.common.model.File;
-import com.lesports.gene.vct.common.utils.VersionGenerator;
 import com.lesports.gene.vct.service.FileService;
 import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
@@ -18,7 +17,7 @@ import org.springframework.stereotype.Service;
  * Created by radish on 9/11/15.
  */
 @Service
-public class FileServiceImpl extends BaseServiceImpl<String, File> implements FileService {
+public class FileServiceImpl extends BaseServiceMongoImpl<String, File> implements FileService {
 
     /**
      * 新增

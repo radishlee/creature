@@ -4,6 +4,8 @@ import java.util.List;
 import java.util.Map;
 
 public interface BaseService<ID, V> {
+
+
     public V get(ID id);
 
     public void delete(ID id);
