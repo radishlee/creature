@@ -14,12 +14,12 @@ public class FileController {
 
     @RequestMapping(value = "/preFile", method = RequestMethod.GET)
     public Object getPrevicousFile(String name, Integer type) {
-        return fileService.getPreviousFile(name, type);
+        return "aaa";
     }
 
 
     @RequestMapping(value = "/latFile", method = RequestMethod.GET)
     public Object getLatestFile(String name, Integer type) {
-        return fileService.getLatestFile(name, type);
+        return "aaa";
     }
 }
