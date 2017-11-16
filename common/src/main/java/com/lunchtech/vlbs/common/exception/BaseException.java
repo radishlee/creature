@@ -22,5 +22,8 @@ public class BaseException extends RuntimeException {
 	public void setType(String type) {
 		this.type = type;
 	}
-	
+
+	public BaseException(String message, Throwable cause) {
+		super(message, cause);
+	}
 }

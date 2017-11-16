@@ -36,7 +36,7 @@
     </dependencies>
     <!-- 编译打包 -->
     <build>
-        <finalName>api</finalName>
+        <finalName>uploader</finalName>
         <pluginManagement>
             <plugins>
                 <!-- 打包 -->
